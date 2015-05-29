@@ -40,10 +40,10 @@ where `BEEP_ITEM` are objects with:
 
 ### Example:
 
-```json
-{"beep": [
+```bash
+curl -H "Content-Type: application/json" -X POST -d '{"beep": [
   {"frequency": 600},
   {"frequency": 900},
   {"frequency": 1200, "repeat": 2}
-]}
+]}' http://localhost:3000/beep
 ```
